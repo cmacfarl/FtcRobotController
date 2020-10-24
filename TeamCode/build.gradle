@@ -12,7 +12,15 @@
 // Custom definitions may go here
 
 // Include common definitions from above.
+
 apply from: '../build.common.gradle'
+
+android {
+    sourceSets {
+        main.java.srcDirs += '../../terkel/java'
+        main.java.srcDirs += '../../FTC-Team-25/2021'
+    }
+}
 
 repositories {
     maven { url = "https://dl.bintray.com/first-tech-challenge/ftcsdk/" }
