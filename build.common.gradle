@@ -23,6 +23,10 @@ android {
 
     compileSdkVersion 28
 
+      lintOptions {
+          abortOnError false
+      }
+
     signingConfigs {
         debug {
             keyAlias 'androiddebugkey'

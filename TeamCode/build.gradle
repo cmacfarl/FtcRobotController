@@ -15,6 +15,10 @@
 apply from: '../build.common.gradle'
 
 android {
+      lintOptions {
+          abortOnError false
+      }
+
     sourceSets {
         main.java.srcDirs += '../../terkel/java'
         main.java.srcDirs += '../../FTC-Team-5218/2021'
